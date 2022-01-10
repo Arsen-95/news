@@ -1,0 +1,26 @@
+.top__stories {
+    border: 1px solid green;
+    padding: 10px 15px;
+}
+
+.new__stories {
+    border: 1px solid blue;
+    padding: 10px 15px;
+}
+
+.best__stories {
+    border: 1px solid red;
+    padding: 10px 15px;
+}
+
+.li__el:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
