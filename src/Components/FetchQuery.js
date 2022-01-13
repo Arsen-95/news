@@ -2,9 +2,12 @@ import axios from 'axios';
 
 let postUrl = 'https://hacker-news.firebaseio.com/v0/item/';
 
-async function IdsQuery(url) {
+async function IdsQuery(url, startNum, num) {
     const fetchQuery = await axios(url);
-    const ids = fetchQuery.data.slice(0, 10);
+    const ids = fetchQuery.data.slice(startNum, num);
+    console.log(startNum, num);
+    console.log(ids);
+    // setPosts([...posts, fetchQuery.data.splice(0, `${num}`)])
     return ids;
 }
 
