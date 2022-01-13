@@ -1,6 +1,6 @@
 import { useEffect, useMemo } from "react";
 import { useParams } from "react-router-dom"
-import { useState } from "react/cjs/react.development";
+import { useState } from 'react';
 import { PostsQuery } from "./FetchQuery";
 import Loader from "./Loader";
 
