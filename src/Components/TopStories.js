@@ -30,7 +30,7 @@ const TopStories = () => {
         // }
     };
         
-    useEffect( async () => {
+    useMemo( async () => {
         setLoad(true);
         let ids = await getIds();      
         await getPosts(ids);
